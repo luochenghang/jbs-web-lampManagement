@@ -33,8 +33,16 @@ function tableLoad(){
                     },  
                     {"data": "id"},
                     {"data": "userName"},
-                    {"data": "realName"},
-                    {"data": "email"},
+                    {"data": "realName",
+					"render":function(id, type, data){
+                         return id == null?" ": id;
+                      }
+					},
+                    {"data": "email",
+					"render":function(id, type, data){
+                         return id == null?" ": id;
+                      }
+					},
                     {"data": "createDate"},
                     {"data": "lastLoginTime",
                         "render":function(id, type, data){

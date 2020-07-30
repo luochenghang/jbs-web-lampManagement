@@ -4,7 +4,7 @@ var urlData = {
   online:"http://luoch.cn/"
 };
 
-var baseUrl = urlData.online;
+var baseUrl = urlData.dev;
 
 //api的url
 /*********************************************************************************/

@@ -70,7 +70,7 @@
           <div class="form-group"><label class="col-sm-3 control-label no-padding-right" for="form-field-1">详细地址： </label>
           <div class="col-sm-9"><input type="text" name="详细地址" id="address" value="" class="col-xs-7 text_info" disabled="disabled"></div>
           </div>
-          
+		  
           <div class="form-group"><label class="col-sm-3 control-label no-padding-right" for="form-field-1">联系人： </label>
           <div class="col-sm-9"><input type="text" name="联系人" id="contactName" value="" class="col-xs-7 text_info" disabled="disabled"> </div>
           </div>
@@ -264,8 +264,8 @@ function shop_save_info(){
 								  $('#shop').find('.btn-success').css({'display':'none'});
 								   layer.close(index);
 								}else{
-								shopIsnotEmpty = 0;
-									layer.alert('修改失败！',{
+								//shopIsnotEmpty = 0;
+									layer.alert(res.msg,{
 									   title: '提示框',				
 									   icon:1,			   		
 									  });

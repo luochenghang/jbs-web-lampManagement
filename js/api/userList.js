@@ -67,7 +67,7 @@ function tableLoad(status){
                     },
                     {"data": "userBase.sex",
                     "render": function(id, type, data) { // 返回自定义内容
-                        if (id == 0) {
+                        if (id == 1) {
                             return "男";
                         }else{
                             return "女";
